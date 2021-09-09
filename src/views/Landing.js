@@ -200,7 +200,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src= "assets/mission_picture.png"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -209,12 +209,16 @@ export default function Landing() {
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
                   <h3 className="text-3xl font-semibold">
-                    A growing company
+                    What do we do?
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    you're good to go.
+                  Here at Linkare, we are driven by a single goal: to do our part in making the world a better place for all. We have designed an app that allows nonprofits to request certain items that they are in need of. That request is then sent to all volunteers near the area, who will then drop off the requested items to the shelter.
+                  <br />
+                  <br />
+                  Daniel Armstrong of CityTeam: “Linkare provides a way for us to request whatever we need and have it delivered to our doorstep within a week. It doesn’t get much easier than that.”
+                  <br />
+                  <br />
+                  Gisela Bushy of Loaves and Fishes: The app is user-friendly, quite intuitive, and well-supported by the team that created this mobile app. We are delighted to be a part of their efforts to help people in the community connect to causes they care about."
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -281,6 +285,11 @@ export default function Landing() {
               <MemberProfile name="Jono Moore" role="Organization Outreach Lead" />
               <MemberProfile name="Ryan Chan" role="Social Media Manager" />
               <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing Lead" />
+              <MemberProfile name="Christopher Lai" role="Outreach Director" />
+              <MemberProfile name="Leo Ying" role="Marketing Director" />
+              <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Director" />
+              <MemberProfile name="Richard Lin" role="Programming Director" />
+
             </div>
           </div>
         </section>
