@@ -65,9 +65,9 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-hands"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Request as a Non-Profit</h6>
+                    <h6 className="text-xl font-semibold">Nonprofit Registration</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.
+                    Partner with us! You will be invited to a call where we can get to know your needs better, and show you all the help that we provide! 
                     </p>
                   </div>
                 </div>
@@ -96,11 +96,10 @@ export default function Landing() {
                       <i className="fas fa-box-open"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      Donate as a Volunteer
+                      Team Application
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Volunteers can view and fulfill donation requests from numerous homeless shelters all in one centralized application.
-                    </p>
+                    This organization is the perfect place for students to get volunteer hours and make a real impact in their community. You could also apply your programming skills and develop for us as well! If you want to help grow the business, you can help us get in contact with other shelters or reach out to potential sponsors to financially help us. Apply today!                    </p>
                   </div>
                 </div>
               </div>

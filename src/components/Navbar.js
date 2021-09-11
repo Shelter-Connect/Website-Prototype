@@ -105,7 +105,7 @@ class Navbar extends Component {
                       " transition duration-300 fab fa-linkedin text-lg leading-lg "
                     }
                   />
-                  <span className="lg:hidden inline-block ml-2">Tweet</span>
+                  <span className="lg:hidden inline-block ml-2">https://www.linkare.org/volunteer-registration</span>
                 </a>
               </li>
 
