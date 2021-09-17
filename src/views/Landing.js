@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import MemberProfile from "components/MemberProfile.js";
+import missionPhoto from  "../assets/img/mission_picture.png";
 
 export default function Landing() {
   return (
@@ -200,7 +201,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src= "assets/mission_picture.png"
+                  src= {missionPhoto}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">

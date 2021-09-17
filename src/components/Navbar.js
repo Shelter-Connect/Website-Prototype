@@ -73,7 +73,8 @@ class Navbar extends Component {
                       : "text-gray-800 hover:text-gray-600") +
                     " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
+                  href="https://www.linkare.org/"
+                  target = "_blank"
                 >
                   <i
                     className={
