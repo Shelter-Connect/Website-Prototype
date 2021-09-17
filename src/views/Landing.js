@@ -80,10 +80,10 @@ export default function Landing() {
                       <i className="fas fa-retweet"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      TODO
+                      Who we are
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
+                      Linkare is a non-profit, high-school led organization dedicated to helping other non-profits sustain their businesses through initiatives like app-building, virtual food drives, and fundraisers.
                     </p>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function Landing() {
                       Team Application
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                    This organization is the perfect place for students to get volunteer hours and make a real impact in their community. You could also apply your programming skills and develop for us as well! If you want to help grow the business, you can help us get in contact with other shelters or reach out to potential sponsors to financially help us. Apply today!                    </p>
+                    This organization is the perfect place for students to get volunteer hours and make a real impact in their community. You could also apply your programming skills and develop for us as well! Simply scross to the bottom of the page to apply.                    </p>
                   </div>
                 </div>
               </div>
@@ -112,18 +112,21 @@ export default function Landing() {
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                  Past and Future Events
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Don't let your uses guess by attaching tooltips and popoves
-                  to any element. Just make sure you enable them first via
-                  JavaScript.
+                  We created a fully functional app using Firebase and Flutter. This app allows nonprofits to request items and have that request streamlined to all the donors on the app. Currently, we have over 10 organizations and 30 volunteers on the app actively donating.
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and
-                  you're good to go. Just make sure you enable them first via
-                  JavaScript.
+                  We had a virtual food drive for Loaves and Fishes where
+                  we donated 500 water bottles and 400 peanut butter jars using our
+                  app's brand new update!
+                </p>
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                  *Coming Novemeber*
+                  We have a panel event coming up where we are interviewing nonprofit CEOs
+                  and formerly homeless individuals to see exactly how much donations have helped them
+                  as well as what it takes to start a nonprofit.
                 </p>
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
@@ -131,7 +134,7 @@ export default function Landing() {
                 >
                   Check Tailwind Starter Kit!
                 </a>
-              </div>
+                </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600">
