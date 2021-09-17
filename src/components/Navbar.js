@@ -109,7 +109,6 @@ class Navbar extends Component {
                   <span className="lg:hidden inline-block ml-2">https://www.linkare.org/volunteer-registration</span>
                 </a>
               </li>
-
               <li className="flex items-center">
                 <a
                   className={
