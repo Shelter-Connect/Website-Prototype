@@ -336,11 +336,11 @@ export default function Landing() {
                   <i className="fas fa-medal text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
+                  Service
                 </h6>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  We are dedicated to serving the people in our community and helping
+                  to improve their lives.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -348,11 +348,11 @@ export default function Landing() {
                   <i className="fas fa-poll text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
+                  Community
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Working with our community is important to us, and we directly 
+                  partner with non-profit organizations.  
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -360,11 +360,11 @@ export default function Landing() {
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
+                  Teamwork
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  As the adage goes, there's no "I" in "team"! We emphasize teamwork 
+                  as the key to success both in Linkare and in our community. 
                 </p>
               </div>
             </div>
