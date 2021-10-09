@@ -4,6 +4,7 @@ import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import MemberProfile from "components/MemberProfile.js";
 import missionPhoto from  "../assets/img/mission_picture.png";
+import MeetingLoaves from "../assets/img/Meeting with L&F.jpg";
 
 export default function Landing() {
   return (
@@ -130,7 +131,7 @@ export default function Landing() {
                   as well as what it takes to start a nonprofit.
                 </p>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+                  href="../../assets\img/Meeting with L&F.jpg"
                   className="font-bold text-gray-800 mt-8"
                 >
                   Check Tailwind Starter Kit!
@@ -141,7 +142,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600">
                   <img
                     alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    src={MeetingLoaves}
                     className="w-full align-middle rounded-t-lg"
                   />
                   <blockquote className="relative p-8 mb-4">
@@ -161,12 +162,10 @@ export default function Landing() {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
+                      Linkare App
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
+                      We are most well-known for our app, Linkare! During the summer of 2020, we coded an app to help other nonprofits request items and have that information streamlined to other donors.
                     </p>
                   </blockquote>
                 </div>
@@ -223,46 +222,6 @@ export default function Landing() {
                   <br />
                   Gisela Bushy of Loaves and Fishes: The app is user-friendly, quite intuitive, and well-supported by the team that created this mobile app. We are delighted to be a part of their efforts to help people in the community connect to causes they care about."
                   </p>
-                  <ul className="list-none mt-6">
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3">
-                            <i className="fas fa-fingerprint"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-gray-600">
-                            Carefully crafted components
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3">
-                            <i className="fab fa-html5"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-gray-600">Amazing page examples</h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3">
-                            <i className="far fa-paper-plane"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-gray-600">Dynamic components</h4>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -322,18 +281,17 @@ export default function Landing() {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                  Linkare's Values
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Put the potentially record low maximum sea ice extent tihs year down to low ice.
-                  According to the National Oceanic and Atmospheric Administration, Ted, Scambos.
+                  Here are Linkare's three values that we value the most!
                 </p>
               </div>
             </div>
             <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-medal text-xl"></i>
+                  <i className="fas fa-settings text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
                   Service
@@ -345,7 +303,7 @@ export default function Landing() {
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-poll text-xl"></i>
+                  <i className="fas fa-home text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
                   Community
@@ -357,7 +315,7 @@ export default function Landing() {
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-lightbulb text-xl"></i>
+                  <i className="fas fa-users"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
                   Teamwork

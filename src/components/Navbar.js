@@ -73,7 +73,7 @@ class Navbar extends Component {
                       : "text-gray-800 hover:text-gray-600") +
                     " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="https://www.linkare.org/"
+                  href="https://www.facebook.com/linkare.app.98"
                   target = "_blank"
                 >
                   <i
@@ -96,7 +96,8 @@ class Navbar extends Component {
                       : "text-gray-800 hover:text-gray-600") +
                     " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
+                  href="https://www.linkedin.com/company/linkare20/?viewAsMember=true"
+                  target = "_blank"
                 >
                   <i
                     className={
@@ -117,7 +118,8 @@ class Navbar extends Component {
                       : "text-gray-800 hover:text-gray-600") +
                     " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
-                  href="#pablo"
+                  href="https://github.com/Shelter-Connect"
+                  target = "_blank"
                 >
                   <i
                     className={
