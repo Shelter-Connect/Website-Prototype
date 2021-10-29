@@ -143,6 +143,8 @@ class Navbar extends Component {
                   }
                   type="button"
                   style={{ transition: "all .15s ease" }}
+                  href = "https://www.facebook.com/linkare.app.98"
+                  target = "_blank"
                 >
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
                 </button>
