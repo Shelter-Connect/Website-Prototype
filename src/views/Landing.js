@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import MemberProfile from "components/MemberProfile.js";
-import missionPhoto from  "../assets/img/mission_picture.png";
 import MeetingLoaves from "../assets/img/Meeting with L&F.jpg";
 import Instagram from "components/Instagram";
 import TeamPicture from "../assets/img/team picture.jpg";
@@ -19,7 +18,7 @@ export default function Landing() {
             }}>
           <div className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage:`url(${TeamPicture})`
+                backgroundImage: `url(https://images.unsplash.com/photo-1615897570286-da936a5dfb81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1521&q=80  )`
               }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           </div>
@@ -127,7 +126,7 @@ export default function Landing() {
                   app's brand new update!
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  *Coming Novemeber*
+                  <span className="font-bold">Coming Novemeber:</span>{' '}
                   We have a panel event coming up where we are interviewing nonprofit CEOs
                   and formerly homeless individuals to see exactly how much donations have helped them
                   as well as what it takes to start a nonprofit.
