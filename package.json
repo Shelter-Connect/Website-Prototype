@@ -6,6 +6,7 @@
     "@fortawesome/fontawesome-free": "5.15.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-ig-feed": "^1.0.4",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3"

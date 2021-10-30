@@ -5,6 +5,7 @@ import Footer from "components/Footer.js";
 import MemberProfile from "components/MemberProfile.js";
 import missionPhoto from  "../assets/img/mission_picture.png";
 import MeetingLoaves from "../assets/img/Meeting with L&F.jpg";
+import Instagram from "components/Instagram";
 
 export default function Landing() {
   return (
@@ -230,6 +231,7 @@ export default function Landing() {
 
 
         <section className="pt-20 pb-48">
+          {/* <Instagram /> */}
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -251,7 +253,6 @@ export default function Landing() {
               <MemberProfile name="Leo Ying" role="Marketing Director" />
               <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Director" />
               <MemberProfile name="Richard Lin" role="Programming Director" />
-
             </div>
           </div>
         </section>
@@ -291,7 +292,7 @@ export default function Landing() {
             <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-settings text-xl"></i>
+                  <i className="fas fa-hands text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
                   Service
@@ -328,6 +329,7 @@ export default function Landing() {
             </div>
           </div>
         </section>
+
         <section className="relative block py-24 lg:pt-0 bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
