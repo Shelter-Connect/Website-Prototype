@@ -6,6 +6,7 @@ import MemberProfile from "components/MemberProfile.js";
 import missionPhoto from  "../assets/img/mission_picture.png";
 import MeetingLoaves from "../assets/img/Meeting with L&F.jpg";
 import Instagram from "components/Instagram";
+import TeamPicture from "../assets/img/team picture.jpg";
 
 export default function Landing() {
   return (
@@ -18,7 +19,7 @@ export default function Landing() {
             }}>
           <div className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
+                backgroundImage:`url(${TeamPicture})`
               }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           </div>
@@ -135,7 +136,6 @@ export default function Landing() {
                   href="../../assets\img/Meeting with L&F.jpg"
                   className="font-bold text-gray-800 mt-8"
                 >
-                  Check Tailwind Starter Kit!
                 </a>
                 </div>
 
@@ -203,7 +203,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src= {missionPhoto}
+                  src= {TeamPicture}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
