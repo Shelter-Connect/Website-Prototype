@@ -229,12 +229,11 @@ export default function Landing() {
         </section>
 
 
-        <section className="pt-20 pb-48">
-          {/* <Instagram /> */}
+        <section className="pt-20 pb-24">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
+            <div className="flex flex-wrap justify-center text-center mb-12">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">
+                <h2 className="text-5xl font-bold">
                   Meet the Team
                 </h2>
               </div>
@@ -242,18 +241,24 @@ export default function Landing() {
             <div className="flex flex-wrap space-y-80">
               <MemberProfile name="Nathan Palamuttam" role="CEO" />
               <MemberProfile name="Rick Yanashita" role="Frontend Lead" />
-              <MemberProfile name="Nathan Gong" role="Backend Lead + Web Developer" />
+              <MemberProfile name="Nathan Gong" role="Backend + Web Development Lead" />
               <MemberProfile name="Ethan Yu" role="Backend Lead" />
               <MemberProfile name="Aidan Huynh" role="Marketing Lead" />
               <MemberProfile name="Jono Moore" role="Organization Outreach Lead" />
               <MemberProfile name="Ryan Chan" role="Social Media Manager" />
               <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing Lead" />
-              <MemberProfile name="Christopher Lai" role="Outreach Director" />
-              <MemberProfile name="Leo Ying" role="Marketing Director" />
-              <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Director" />
-              <MemberProfile name="Richard Lin" role="Programming Director" />
+              <MemberProfile name="Christopher Lai" role="Outreach Lead" />
+              <MemberProfile name="Leo Ying" role="Marketing Lead" />
+              <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Lead" />
+              <MemberProfile name="Richard Lin" role="Fullstack Software Lead" />
             </div>
           </div>
+        </section>
+        <section className="pt-20 pb-48">
+          <h2 className="flex justify-center text-5xl font-bold mb-8">
+            Instagram
+          </h2>
+          <Instagram />
         </section>
 
         <section className="pb-20 relative block bg-gray-900">
@@ -336,10 +341,10 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
                   <div className="flex-auto p-5 lg:p-10">
                     <h4 className="text-2xl font-semibold">
-                      Want to work with us?
+                      Want to partner with us or join our team?
                     </h4>
                     <p className="leading-relaxed mt-1 mb-4 text-gray-600">
-                      Complete this form and we will get back to you in 24 hours.
+                      Fill out this form below.
                     </p>
                     <div className="relative w-full mb-3 mt-8">
                       <label
