@@ -67,27 +67,27 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.linkedin.com/company/linkare20/?viewAsMember=true">LinkedIn
+                        target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/linkare20/?viewAsMember=true">LinkedIn
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://github.com/Shelter-Connect/Website-Prototype">Github
+                        target="_blank" rel="noreferrer" href="https://github.com/Shelter-Connect/Website-Prototype">Github
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.instagram.com/linkare.app/">Instagram
+                        target="_blank" rel="noreferrer" href="https://www.instagram.com/linkare.app/">Instagram
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://play.google.com/store/apps/details?id=linkare.phase1">Google Play Download
+                        target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=linkare.phase1">Google Play Download
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://apps.apple.com/us/app/linkare/id1528076084">Apple Download
+                        target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/linkare/id1528076084">Apple Download
                     </a>
                   </li>
                 </ul>
