@@ -1,11 +1,29 @@
 import React, { Component } from "react";
+import Logo from "../assets/img/logo.png";
+import "../styles.css"
 
 class Navbar extends Component {
   constructor(props) {
     super(props);
+
+    let iOS = false;
+    if (navigator.appVersion.indexOf("Mac") !== -1) iOS = true;
+    if ([
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
+      iOS = true;
+    }
+    console.log(iOS)
+    
     this.state = {
       navbarOpen: false,
-      transparent: true
+      transparent: true,
+      iOS: iOS
     };
   }
 
@@ -13,7 +31,7 @@ class Navbar extends Component {
     this.listener = document.addEventListener("scroll", e => {
       var scrolled = document.scrollingElement.scrollTop;
 
-      if (scrolled >= 10) {
+      if (scrolled >= window.innerHeight * 0.2) {
         if (this.state.transparent) {
           this.setState({ transparent: false });
         }
@@ -34,16 +52,20 @@ class Navbar extends Component {
         }
       >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
+          <div className="w-full relative flex items-center justify-between lg:w-auto lg:static lg:justify-start">
+            <img
+              src={Logo}
+              alt="Linkare Logo"
+              className="w-auto h-10 lg:h-20 float-left inline-block"
+            />
+            <span
               className={
-                (this.state.transparent ? "text-white" : "text-gray-800") +
-                " transition duration-300 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                (this.state.transparent ? "fadeOut" : "fadeIn") +
+                " text-gray-800 transition duration-300 text-lg ml-2 font-bold leading-relaxed inline-block mr-2 whitespace-nowrap uppercase text-xl"
               }
-              href=""
             >
               Linkare
-            </a>
+            </span>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -59,8 +81,9 @@ class Navbar extends Component {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-              (this.state.navbarOpen ? " block rounded shadow-lg" : " hidden")
+              "transition lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none mt-1" +
+              (this.state.navbarOpen ? " block rounded" : " hidden") +
+              (this.state.transparent ? " shadow-lg px-3" : "")
             }
             id="example-navbar-warning"
           >
@@ -71,10 +94,11 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.facebook.com/linkare.app.98"
                   target = "_blank"
+                  rel="noreferrer"
                 >
                   <i
                     className={
@@ -94,10 +118,11 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.linkedin.com/company/linkare20/?viewAsMember=true"
                   target = "_blank"
+                  rel="noreferrer"
                 >
                   <i
                     className={
@@ -107,7 +132,7 @@ class Navbar extends Component {
                       " transition duration-300 fab fa-linkedin text-lg leading-lg "
                     }
                   />
-                  <span className="lg:hidden inline-block ml-2">https://www.linkare.org/volunteer-registration</span>
+                  <span className="lg:hidden inline-block ml-2">Follow</span>
                 </a>
               </li>
               <li className="flex items-center">
@@ -116,10 +141,11 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://github.com/Shelter-Connect"
                   target = "_blank"
+                  rel="noreferrer"
                 >
                   <i
                     className={
@@ -134,20 +160,19 @@ class Navbar extends Component {
               </li>
 
               <li className="flex items-center">
-                <button
+                <a
                   className={
                     (this.state.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
                       : "bg-blue-500 text-white active:bg-blue-600") +
-                    " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                    " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mb-3"
                   }
-                  type="button"
-                  style={{ transition: "all .15s ease" }}
-                  href = "https://www.facebook.com/linkare.app.98"
-                  target = "_blank"
+                  href={this.state.iOS ? "https://apps.apple.com/us/app/linkare/id1528076084" : "https://play.google.com/store/apps/details?id=linkare.phase1"}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
-                </button>
+                </a>
               </li>
             </ul>
           </div>

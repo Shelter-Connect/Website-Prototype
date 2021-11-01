@@ -23,20 +23,19 @@ export default function Landing() {
             <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           </div>
           <div className="container relative mx-auto">
-              <div className="items-center flex flex-wrap">
-                <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                  <div className="pr-12">
-                    <h1 className="text-white font-bold text-5xl">
-                      Change Lives.
-                    </h1>
-                    <p className="mt-4 text-lg text-gray-300">
-                      Non-Profit organizations are in need of donations, but people often donate items that they already have, meaning the donations go to waste.
-                      With Linkare, we aim to address this issue with a streamlined communication app between Non-Profits and volunteers.
-                    </p>
-                  </div>
+            <div className="items-center flex flex-wrap">
+              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                <div className="px-8">
+                  <h1 className="text-white font-bold text-5xl">
+                    Linkare
+                  </h1>
+                  <p className="mt-4 text-lg text-gray-300">
+                    Non-Profit organizations are in need of donations, but people often donate items that they already have, meaning the donations go to waste.
+                    With Linkare, we aim to address this issue with a streamlined communication app between Non-Profits and volunteers.
+                  </p>
                 </div>
-
               </div>
+            </div>
           </div>
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"

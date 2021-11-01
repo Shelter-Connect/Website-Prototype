@@ -1,0 +1,15 @@
+.fadeIn {
+  opacity: 1;
+  -webkit-transition: opacity .30s;
+  -moz-transition: opacity .30s;
+  -o-transition: opacity .30s;
+  transition: opacity .30s;
+}
+
+.fadeOut {
+  opacity: 0;
+  -webkit-transition: opacity .30s;
+  -moz-transition: opacity .30s;
+  -o-transition: opacity .30s;
+  transition: opacity .30s;
+}
