@@ -140,30 +140,6 @@ class Navbar extends Component {
                 <a
                   className={
                     (this.state.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="https://github.com/Shelter-Connect"
-                  target = "_blank"
-                  rel="noreferrer"
-                >
-                  <i
-                    className={
-                      (this.state.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " transition duration-300 fab fa-github text-lg leading-lg "
-                    }
-                  />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
-                </a>
-              </li>
-
-              <li className="flex items-center">
-                <a
-                  className={
-                    (this.state.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
                       : "bg-blue-500 text-white active:bg-blue-600") +
                     " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mb-3"
