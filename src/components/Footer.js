@@ -32,32 +32,30 @@ export default function Footer() {
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
             <div className="mt-6">
-              <button
+              <a href="https://google.com" target="_blank" rel="noreferrer"
                 className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
                 <i className="flex fab fa-twitter"></i>
-              </button>
-              <button
+              </a>
+              <a href="https://google.com" target="_blank" rel="noreferrer"
                 className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
                 <i className="flex fab fa-facebook-square"></i>
-              </button>
-              <button
+              </a>
+              <a href="https://google.com" target="_blank" rel="noreferrer"
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
                 <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
+              </a>
+              <a href="https://google.com" target="_blank" rel="noreferrer"
                 className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                onClick = "https://apps.apple.com/us/app/linkare/id1528076084"
-                target = "_blank"
                 type="button"
               >
                 <i className="flex fab fa-github"></i>
-              </button>
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
