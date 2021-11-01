@@ -117,7 +117,7 @@ export default function Landing() {
                   Past and Future Events
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  We created a fully functional app using Firebase and Flutter. This app allows nonprofits to request items and have that request streamlined to all the donors on the app. Currently, we have over 10 organizations and 30 volunteers on the app actively donating.
+                  We created a fully functional app using Firebase and Flutter. This app allows nonprofits to request items and have that request streamlined to all the donors on the app. Currently, we have over 10 organizations and 100 volunteers on the app actively donating.
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
                   We had a virtual food drive for Loaves and Fishes where
@@ -125,7 +125,7 @@ export default function Landing() {
                   app's brand new update!
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  <span className="font-bold">Coming Novemeber:</span>{' '}
+                  <span className="font-bold">Coming November:</span>{' '}
                   We have a panel event coming up where we are interviewing nonprofit CEOs
                   and formerly homeless individuals to see exactly how much donations have helped them
                   as well as what it takes to start a nonprofit.
