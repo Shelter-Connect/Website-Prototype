@@ -30,8 +30,9 @@ class Navbar extends Component {
   componentDidMount() {
     this.listener = document.addEventListener("scroll", e => {
       var scrolled = document.scrollingElement.scrollTop;
+      var rect = document.getElementById("title").getBoundingClientRect();
 
-      if (scrolled >= window.innerHeight * 0.2) {
+      if (scrolled >= rect.top + rect.height*2) {
         if (this.state.transparent) {
           this.setState({ transparent: false });
         }
@@ -82,8 +83,8 @@ class Navbar extends Component {
           <div
             className={
               "transition lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none mt-1" +
-              (this.state.navbarOpen ? " block rounded" : " hidden") +
-              (this.state.transparent ? " shadow-lg px-3" : "")
+              (this.state.navbarOpen ? " block rounded px-3 lg:px-0" : " hidden") +
+              (this.state.transparent ? " shadow-lg" : "")
             }
             id="example-navbar-warning"
           >
@@ -94,7 +95,7 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.facebook.com/linkare.app.98"
                   target = "_blank"
@@ -118,7 +119,7 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.linkedin.com/company/linkare20/?viewAsMember=true"
                   target = "_blank"
@@ -141,7 +142,7 @@ class Navbar extends Component {
                     (this.state.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " transition duration-300 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://github.com/Shelter-Connect"
                   target = "_blank"
