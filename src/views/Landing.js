@@ -30,8 +30,8 @@ export default function Landing() {
                     Linkare
                   </h1>
                   <p className="mt-4 text-lg text-gray-300">
-                    Non-Profit organizations are in need of donations, but people often donate items that they already have, meaning the donations go to waste.
-                    With Linkare, we aim to address this issue with a streamlined communication app between Non-Profits and volunteers.
+                    Nonprofit organizations are in need of donations, but people often donate items that they already have, meaning the donations go to waste.
+                    With Linkare, we aim to address this issue with a streamlined communication app between nonprofits and volunteers.
                   </p>
                 </div>
               </div>
@@ -85,12 +85,12 @@ export default function Landing() {
                       Who we are
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Linkare is a non-profit, high-school led organization dedicated to helping other non-profits sustain their businesses through initiatives like app-building, virtual food drives, and fundraisers.
+                      Linkare is a nonprofit, high-school led organization dedicated to helping other nonprofits sustain their businesses through initiatives like app-building, virtual food drives, and fundraisers.
                     </p>
                   </div>
                 </div>
               </div>
-
+              
               <div className="pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
@@ -287,9 +287,6 @@ export default function Landing() {
                 <h2 className="text-4xl font-semibold text-white">
                   Linkare's Values
                 </h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Here are Linkare's three values that we value the most!
-                </p>
               </div>
             </div>
             <div className="flex flex-wrap mt-12 justify-center">
@@ -314,7 +311,7 @@ export default function Landing() {
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
                   Working with our community is important to us, and we directly 
-                  partner with non-profit organizations.  
+                  partner with nonprofit organizations.  
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
