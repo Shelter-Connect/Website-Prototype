@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Nonprofit organizations are in need of donations, but people often donate items that they already have, meaning the donations go to waste. With Linkare, we aim to address this issue with a streamlined communication app between nonprofits and volunteers."
     />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <link
@@ -36,6 +36,13 @@
   </head>
   <body class="text-gray-800 antialiased">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form name="contact-us" method="post" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact-us" />
+      <input type="text" placeholder="Name" name="name" />
+      <input type="email" placeholder="Email" name="email" />
+      <input type="text" placeholder="Message" name="message" />
+      <button type="submit">Register</button>
+    </form>
     <div id="root"></div>
     <!--
       This HTML file is a template.

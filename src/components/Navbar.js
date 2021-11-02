@@ -97,6 +97,29 @@ class Navbar extends Component {
                       : "text-gray-800 hover:text-gray-600") +
                     " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
+                  href="https://www.instagram.com/linkare.app"
+                  target = "_blank"
+                  rel="noreferrer"
+                >
+                  <i
+                    className={
+                      (this.state.transparent
+                        ? "lg:text-gray-300 text-gray-500"
+                        : "text-gray-500") +
+                      " transition duration-300 fab fa-instagram text-lg leading-lg "
+                    }
+                  />
+                  <span className="lg:hidden inline-block ml-2">Follow</span>
+                </a>
+              </li>
+              <li className="flex items-center">
+                <a
+                  className={
+                    (this.state.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " transition duration-300 pr-4 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  }
                   href="https://www.facebook.com/linkare.app.98"
                   target = "_blank"
                   rel="noreferrer"
