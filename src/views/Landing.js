@@ -240,16 +240,17 @@ export default function Landing() {
             <div className="flex flex-wrap space-y-80">
               <MemberProfile name="Nathan Palamuttam" role="CEO" />
               <MemberProfile name="Rick Yanashita" role="Co-Founder" />
-              <MemberProfile name="Nathan Gong" role="Backend + Web Development Lead" />
-              <MemberProfile name="Ethan Yu" role="Backend Lead" />
-              <MemberProfile name="Aidan Huynh" role="Marketing Lead" />
-              <MemberProfile name="Jono Moore" role="Organization Outreach Lead" />
+              <MemberProfile name="Nathan Gong" role="Backend + Web Development Director" />
+              <MemberProfile name="Ethan Yu" role="Frontend Director" />
+              <MemberProfile name="Richard Lin" role="Programming Lead" />
+              <MemberProfile name="Aidan Huynh" role="Marketing Director" />
+              <MemberProfile name="Jono Moore" role="Organization Outreach Director" />
               <MemberProfile name="Ryan Chan" role="Social Media Manager" />
-              <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing Lead" />
+              <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing" />
               <MemberProfile name="Christopher Lai" role="Outreach Lead" />
               <MemberProfile name="Leo Ying" role="Marketing Lead" />
               <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Lead" />
-              <MemberProfile name="Richard Lin" role="Fullstack Software Lead" />
+
             </div>
           </div>
         </section>
