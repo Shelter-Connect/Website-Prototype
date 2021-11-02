@@ -164,7 +164,7 @@ export default function Landing() {
                       Linkare App
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      We are most well-known for our app, Linkare! During the summer of 2020, we coded an app to help other nonprofits request items and have that information streamlined to other donors.
+                      We are most well-known for our app, Linkare! Between 2020 and 2021, we coded an app to help other nonprofits request items and have that information streamlined to other donors.
                     </p>
                   </blockquote>
                 </div>
