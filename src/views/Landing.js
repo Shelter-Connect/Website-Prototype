@@ -69,14 +69,14 @@ export default function Landing() {
                     </div>
                     <h6 className="text-xl font-semibold">Nonprofit Registration</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                    Partner with us! You will be invited to a call where we can get to know your needs better, and show you all the help that we provide! 
+                      Partner with us! You will be invited to a call where we can get to know your needs better, and show you all the help that we provide! 
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 transition shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                       <i className="fas fa-retweet"></i>
@@ -197,29 +197,29 @@ export default function Landing() {
 
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
-              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <div className="w-full md:w-5/12 ml-auto mr-auto">
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src= {TeamPicture}
                 />
               </div>
-              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div className="w-full md:w-5/12 ml-auto mr-auto">
                 <div className="md:pr-12">
-                  <div className="text-blue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300">
+                  <div className="text-blue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 mt-6 md:mt-0 shadow-lg rounded-full bg-blue-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
                   <h3 className="text-3xl font-semibold">
                     What do we do?
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Here at Linkare, we are driven by a single goal: to do our part in making the world a better place for all. We have designed an app that allows nonprofits to request certain items that they are in need of. That request is then sent to all volunteers near the area, who will then drop off the requested items to the shelter.
-                  <br />
-                  <br />
-                  Daniel Armstrong of CityTeam: “Linkare provides a way for us to request whatever we need and have it delivered to our doorstep within a week. It doesn’t get much easier than that.”
-                  <br />
-                  <br />
-                  Gisela Bushy of Loaves and Fishes: The app is user-friendly, quite intuitive, and well-supported by the team that created this mobile app. We are delighted to be a part of their efforts to help people in the community connect to causes they care about."
+                    Here at Linkare, we are driven by a single goal: to do our part in making the world a better place for all. We have designed an app that allows nonprofits to request certain items that they are in need of. That request is then sent to all volunteers near the area, who will then drop off the requested items to the shelter.
+                    <br />
+                    <br />
+                    Daniel Armstrong of CityTeam: <b><i>“Linkare provides a way for us to request whatever we need and have it delivered to our doorstep within a week. It doesn’t get much easier than that.”</i></b>
+                    <br />
+                    <br />
+                    Gisela Bushy of Loaves and Fishes: <b><i>"The app is user-friendly, quite intuitive, and well-supported by the team that created this mobile app. We are delighted to be a part of their efforts to help people in the community connect to causes they care about."</i></b>
                   </p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function Landing() {
             </div>
             <div className="flex flex-wrap space-y-80">
               <MemberProfile name="Nathan Palamuttam" role="CEO" />
-              <MemberProfile name="Rick Yanashita" role="Frontend Lead" />
+              <MemberProfile name="Rick Yanashita" role="Co-Founder" />
               <MemberProfile name="Nathan Gong" role="Backend + Web Development Lead" />
               <MemberProfile name="Ethan Yu" role="Backend Lead" />
               <MemberProfile name="Aidan Huynh" role="Marketing Lead" />
@@ -342,59 +342,65 @@ export default function Landing() {
                     <p className="leading-relaxed mt-1 mb-4 text-gray-600">
                       Fill out this form below.
                     </p>
-                    <div className="relative w-full mb-3 mt-8">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="full-name"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Full Name"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
+                    <form name="contact-us" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                      <input type="hidden" name="form-name" value="contact-us" />
+                      <div className="relative w-full mb-3 mt-8">
+                        <label
+                          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="full-name"
+                        >
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                          placeholder="Full Name"
+                          name="name"
+                          style={{ transition: "all .15s ease" }}
+                        />
+                      </div>
 
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Email"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
+                      <div className="relative w-full mb-3">
+                        <label
+                          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="email"
+                        >
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                          placeholder="Email"
+                          name="email"
+                          style={{ transition: "all .15s ease" }}
+                        />
+                      </div>
 
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="message"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        rows="4"
-                        cols="80"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Type a message..."
-                      />
-                    </div>
-                    <div className="text-center mt-6">
-                      <button
-                        className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                        style={{ transition: "all .15s ease" }}
-                      >
-                        Send Message
-                      </button>
-                    </div>
+                      <div className="relative w-full mb-3">
+                        <label
+                          className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="message"
+                        >
+                          Message
+                        </label>
+                        <textarea
+                          rows="4"
+                          cols="80"
+                          className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                          placeholder="Type a message..."
+                          name="message"
+                        />
+                      </div>
+                      <div className="text-center mt-6">
+                        <button
+                          className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                          type="submit"
+                          style={{ transition: "all .15s ease" }}
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
