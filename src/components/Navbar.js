@@ -167,7 +167,7 @@ class Navbar extends Component {
                       : "bg-blue-500 text-white active:bg-blue-600") +
                     " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mb-3"
                   }
-                  href={this.state.iOS ? "https://apps.apple.com/us/app/linkare/id1528076084" : "https://play.google.com/store/apps/details?id=linkare.phase1"}
+                  href={"https://apps.apple.com/us/app/linkare/id1528076084"}
                   target="_blank"
                   rel="noreferrer"
                 >
