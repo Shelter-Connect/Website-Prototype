@@ -6,7 +6,7 @@ const Instagram = () => {
     return (
         <section className="relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <InstagramFeed token="IGQVJXOWc3Ti1uXzhldksxcWlFcTY3LWVxR25wT0dPTTlMV0wxSi14b3d2aFRhU2ZAIcHpfbldRUU0zdGROQnhWMU9VN1VLU1Q5VUdBdUszaDBVZAXNOR2U2YUR1TlFEeTNLRi1rYjdSVDA2MGhTaWtRRAZDZD"  counter="6"/>
+                <InstagramFeed token="IGQVJYeXZA4RXp1ckJSY01MN2lvTE9yWTBzNldfYjNBR3lIcmRPMGhSMXN5dm9xOWJ3bnAxdTZATRzM3cGRVc0NzanlnSXcycm52U1FFLTFpei1RUG9XYUM2ZAzk5RS1KeXVRazMxdE05WlRDTTczc3VJRQZDZD"  counter="6"/>
             </div>
         </section>
     );
