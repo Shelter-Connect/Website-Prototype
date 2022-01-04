@@ -85,7 +85,7 @@ export default function Landing() {
                       Who we are
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Linkare is a nonprofit, high-school led organization dedicated to helping other nonprofits sustain their businesses through initiatives like app-building, virtual food drives, and fundraisers.
+                      Linkare is a nonprofit, high-school led organization dedicated to helping other nonprofits sustain their businesses through initiatives like app-building, virtual food drives, and fundraisers. We've recently received a <b>Certificate of Special Congressional Recognition</b> from Rep. Lofgren for our app!
                     </p>
                   </div>
                 </div>
