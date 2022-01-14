@@ -174,6 +174,22 @@ class Navbar extends Component {
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
                 </a>
               </li>
+              <li className="flex items-center">
+                <a
+                  className={
+                    (this.state.transparent
+                      ? "bg-white text-gray-800 active:bg-gray-100"
+                      : "bg-blue-500 text-white active:bg-blue-600") +
+                    " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mb-3"
+                  }
+                  href={"/orgs"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas"></i> Donate
+                </a>
+              </li>
+              
             </ul>
           </div>
         </div>
