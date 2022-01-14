@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Navbar from 'components/Navbar.js';
+import OrgNavbar from 'components/OrgNavbar.js';
 import Footer from 'components/Footer.js';
-import OrgList from 'components/orgList/orglist';
+
 
 export default function Organizations() {
     return (
         <>
-        <Navbar />
+        <OrgNavbar />
         <main>
-            <OrgList />
+            <div className='relative pt-16 pb-32 flex content-center items-center justify-center' style={{ minHeight: '87vh' }}>
+
+            </div>
         </main>
         <Footer />
         </>
