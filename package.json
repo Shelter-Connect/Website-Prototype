@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
+    "firebase": "^9.6.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-ig-feed": "^1.0.4",
