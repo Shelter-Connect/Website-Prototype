@@ -1,4 +1,44 @@
 .orgHeader h2 {
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
+}
+
+.orgCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.orgCardSingle {
+    margin-top: 15px;
+    width: 35vw;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    height: 10vw;
+}
+
+.orgDescription {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.orgCardHeader {
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+.orgAddress {
+    margin-top: 5px;
+}
+
+.orgLink {
+    color: blue;
 }
