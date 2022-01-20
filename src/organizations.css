@@ -13,12 +13,15 @@
 }
 
 .orgCardSingle {
+   contain:content;
     margin-top: 15px;
-    width: 35vw;
+    width: 40vw;
     text-align: center;
     border-color: black;
     border-radius: 10px;
-    height: 10vw;
+    height: 12vw;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .orgDescription {
@@ -43,13 +46,24 @@
     color: blue;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1500px) {
+    .orgDescription {
+        -webkit-line-clamp: 2;
+    }
+
+    .orgCardSingle {
+        height: 15vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
     .orgCards {
         flex-direction: column;
     }
 
     .orgCardSingle {
-        height: 35vw;
+        height: 15vw;
         width: 70vw;
     }
 
@@ -72,5 +86,11 @@
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .orgCardSingle {
+        height: 30vw;
     }
 }
