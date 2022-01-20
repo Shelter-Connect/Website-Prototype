@@ -26,6 +26,7 @@ function OrgCards() {
 
   console.log(orgs);
 
+
   return (
     <div className='orgCards'>
       
@@ -34,7 +35,9 @@ function OrgCards() {
           <div className='orgCardSingle border border-solid' key={organization.data.name}>
               <h4 className='orgCardHeader'>{organization.data.name}</h4>
               <p className='orgDescription'>{organization.data.description}</p>
-              <p className='orgAddress'>Address: {organization.data.address}</p>
+              
+              <p className='orgAddress'>Address: {organization.data.address ? `${organization.data.address}` : 'None available'}</p>
+
               <Link to={`/orgs/${organization.id}`} className='orgLink'>View Organization</Link>
 
           </div>
