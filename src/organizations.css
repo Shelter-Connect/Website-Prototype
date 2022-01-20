@@ -42,3 +42,35 @@
 .orgLink {
     color: blue;
 }
+
+@media screen and (max-width: 600px) {
+    .orgCards {
+        flex-direction: column;
+    }
+
+    .orgCardSingle {
+        height: 35vw;
+        width: 70vw;
+    }
+
+    .orgCardHeader {
+        font-size: medium;
+    }
+
+    .orgCardSingle p {
+        font-size: small;
+    }
+
+    .orgDescription {
+        -webkit-line-clamp: 2;
+    }
+
+    .orgAddress {
+        word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}
