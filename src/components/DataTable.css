@@ -1,0 +1,12 @@
+.demo {
+    display: grid;
+    place-items: center;
+    margin: 10px auto;
+}
+.requests-div {
+   padding: 0 2rem;
+   width: 500px;
+   max-width: 500px;
+  
+}
+
