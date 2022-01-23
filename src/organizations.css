@@ -22,6 +22,7 @@
     height: 12vw;
     margin-left: 4px;
     margin-right: 4px;
+    box-shadow: 4px 7px;
 }
 
 .orgDescription {
