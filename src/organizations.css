@@ -2,6 +2,7 @@
     font-size: x-large;
     font-weight: bold;
     text-align: center;
+
 }
 
 .orgCards {
@@ -10,6 +11,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 
 .orgCardSingle {
@@ -23,6 +25,7 @@
     margin-left: 4px;
     margin-right: 4px;
     box-shadow: 4px 7px;
+
 }
 
 .orgDescription {
@@ -32,52 +35,63 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+
 }
 
 .orgCardHeader {
     font-weight: bolder;
     margin-bottom: 2px;
+
 }
 
 .orgAddress {
     margin-top: 5px;
+
 }
 
 .orgLink {
     color: blue;
+
 }
 
 
 @media screen and (max-width: 1500px) {
     .orgDescription {
         -webkit-line-clamp: 2;
+
     }
 
     .orgCardSingle {
         height: 15vw;
+
     }
 }
 
 @media screen and (max-width: 1300px) {
     .orgCards {
         flex-direction: column;
+
     }
 
     .orgCardSingle {
         height: 15vw;
         width: 70vw;
+
     }
 
     .orgCardHeader {
         font-size: medium;
+
     }
 
     .orgCardSingle p {
         font-size: small;
+
     }
 
     .orgDescription {
         -webkit-line-clamp: 2;
+
     }
 
     .orgAddress {
@@ -87,11 +101,13 @@
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
+
     }
 }
 
 @media screen and (max-width: 800px) {
     .orgCardSingle {
         height: 30vw;
+        
     }
 }
