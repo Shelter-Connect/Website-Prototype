@@ -3,7 +3,7 @@ import Logo from "../assets/img/logo.png";
 import "../styles.css"
 import { Link } from 'react-router-dom';
 
-class Navbar extends Component {
+class OrgNavbar extends Component {
   constructor(props) {
     super(props);
 
@@ -176,7 +176,7 @@ class Navbar extends Component {
                 </a>
               </li>
               <li className="flex items-center">
-                <Link to='/orgs'
+                <Link to='/'
                   className={
                     (this.state.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
@@ -184,7 +184,7 @@ class Navbar extends Component {
                     " transition duration-300 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 mb-3"
                   }
                 >
-                 Donate
+                 Home
                 </Link>
               </li>
               
@@ -196,4 +196,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default OrgNavbar;
