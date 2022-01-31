@@ -9,6 +9,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-firebase-hooks": "^4.0.2",
+    "react-icons": "^4.3.1",
     "react-ig-feed": "^1.0.4",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
