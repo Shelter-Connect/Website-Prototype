@@ -16,14 +16,14 @@
 
 .orgCardSingle {
    contain:content;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 40vw;
     text-align: center;
     border-color: black;
     border-radius: 10px;
     height: 12vw;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 4px 7px;
     padding: 15px;
 
@@ -56,6 +56,12 @@
 
 }
 
+@media screen and (max-width: 1750px) {
+    .orgDescription {
+        -webkit-line-clamp: 3;
+    }
+}
+
 
 @media screen and (max-width: 1500px) {
     .orgDescription {
@@ -76,8 +82,9 @@
     }
 
     .orgCardSingle {
-        height: 15vw;
+        height: 18vw;
         width: 70vw;
+        padding: 6px;
 
     }
 

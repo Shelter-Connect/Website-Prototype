@@ -35,7 +35,7 @@ function OrgCards() {
         {orgs.map((organization) => (
 
           <div className='orgCardSingle border border-solid' key={organization.data.name}>
-              <h4 className='orgCardHeader'> <BsGlobe /> {organization.data.name}</h4>
+              <h4 className='orgCardHeader' style={{ display: 'flex',  alignItems: 'center', justifyContent: 'center' }}> <BsGlobe size={30} style={{ paddingRight: '5px', color: 'blue'}}/> {organization.data.name}</h4>
               <p className='orgDescription'>{organization.data.description}</p>              
               <p className='orgAddress'>Address: {organization.data.address ? `${organization.data.address}` : 'None available'}</p>
 {/* This link leads to a URL that we can use to have our single org page.  */}
