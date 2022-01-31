@@ -25,6 +25,7 @@
     margin-left: 4px;
     margin-right: 4px;
     box-shadow: 4px 7px;
+    padding: 15px;
 
 }
 
@@ -41,6 +42,7 @@
 .orgCardHeader {
     font-weight: bolder;
     margin-bottom: 2px;
+    font-size: x-large;
 
 }
 
