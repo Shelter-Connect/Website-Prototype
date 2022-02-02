@@ -32,7 +32,7 @@ function OrgCards() {
   return (
     <div className='orgCards'>
       {/* Going over each item in the organization list to create a card element */}
-        {orgs.map((organization) => (
+        {orgs.filter(orgs => orgs.data.name !== 'Linkare Test Organization').map((organization) => (
 
           <div className='orgCardSingle border border-solid' key={organization.data.name}>
               <h4 className='orgCardHeader' style={{ display: 'flex',  alignItems: 'center', justifyContent: 'center' }}> <BsGlobe size={30} style={{ paddingRight: '5px', color: 'blue'}}/> {organization.data.name}</h4>

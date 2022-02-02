@@ -56,6 +56,12 @@
 
 }
 
+@media screen and (min-width: 2000px){
+    .orgCardSingle {
+        height: 10vw;
+    }
+}
+
 @media screen and (max-width: 1750px) {
     .orgDescription {
         -webkit-line-clamp: 3;
