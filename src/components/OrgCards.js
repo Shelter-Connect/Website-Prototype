@@ -34,6 +34,7 @@ function OrgCards() {
       {/* Going over each item in the organization list to create a card element, filtering out the test org */}
       {orgs
         .filter((orgs) => orgs.data.name !== "Linkare Test Organization")
+        .filter((orgs) => orgs.data.itemCategories)
         .map((organization) => (
           <div
             className='orgCardSingle border border-solid'
