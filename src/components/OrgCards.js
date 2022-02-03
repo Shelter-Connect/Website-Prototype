@@ -5,7 +5,7 @@ import "../organizations.css";
 
 // React Icons
 import { BsGlobe } from "react-icons/bs";
-import { FaCarrot } from "react-icons/fa";
+import { FaCarrot, FaBed, FaHeadSideMask } from "react-icons/fa";
 import { MdOutlineVolunteerActivism, MdHealthAndSafety } from "react-icons/md";
 import { GiClothes } from "react-icons/gi";
 
@@ -61,15 +61,23 @@ function OrgCards() {
                   size={30}
                   style={{ paddingRight: "5px", color: "blue" }}
                 />
-              ) : organization.data.itemCategories[0] === "Warmth" ||
-                "Clothes" ? (
+              ) : organization.data.itemCategories[0] === "Clothes" ? (
                 <GiClothes
                   size={30}
                   style={{ paddingRight: "5px", color: "blue" }}
                 />
-              ) : organization.data.itemCategories[0] === "Hygiene" ||
-                "Covid-19" ? (
+              ) : organization.data.itemCategories[0] === "Hygiene" ? (
                 <MdHealthAndSafety
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Warmth" ? (
+                <FaBed
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "COVID-19" ? (
+                <FaHeadSideMask
                   size={30}
                   style={{ paddingRight: "5px", color: "blue" }}
                 />
