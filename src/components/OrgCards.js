@@ -6,6 +6,8 @@ import "../organizations.css";
 // React Icons
 import { BsGlobe } from "react-icons/bs";
 import { FaCarrot } from "react-icons/fa";
+import { MdOutlineVolunteerActivism, MdHealthAndSafety } from "react-icons/md";
+import { GiClothes } from "react-icons/gi";
 
 // Firestore methods
 import firebase from "firebase";
@@ -48,14 +50,31 @@ function OrgCards() {
                 justifyContent: "center",
               }}
             >
-              {/* Render Icon, Carrot for food drive, globe for others */}
-              {organization.data.foodDrive === false ? (
-                <BsGlobe
+              {/* Render Icon, dependent on the first item in the item request category. If nutrition, carrot is rendered, if hygiene, health icon is rendered, etc */}
+              {organization.data.itemCategories[0] === "Nutrition" ? (
+                <FaCarrot
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Volunteering" ? (
+                <MdOutlineVolunteerActivism
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Warmth" ||
+                "Clothes" ? (
+                <GiClothes
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Hygiene" ||
+                "Covid-19" ? (
+                <MdHealthAndSafety
                   size={30}
                   style={{ paddingRight: "5px", color: "blue" }}
                 />
               ) : (
-                <FaCarrot
+                <BsGlobe
                   size={30}
                   style={{ paddingRight: "5px", color: "blue" }}
                 />
