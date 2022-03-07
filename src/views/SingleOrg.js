@@ -30,7 +30,7 @@ export default function SingleOrg() {
       );
     });
   }, []);
-  // console.log(orgData);
+  console.log(orgData);
 
   return (
     <>
@@ -44,8 +44,23 @@ export default function SingleOrg() {
             .filter((orgData) => orgData.id === id)
             .map((organization) => (
 
-              <div className='singleOrginfo' key={organization.id}>
-                <h2>{organization.data.name}</h2>
+              <div className='singleOrginfo' style={{ textAlign: 'center' }} key={organization.id}>
+                <h2 style={{ fontWeight: 'bold' }}>{organization.data.name}</h2>
+                <p>Address: {organization.data.address}</p>
+
+                <div className='singleOrgAbout'>
+                  <p>{organization.data.description}</p>
+                  <a href={organization.data.donationLink}>{organization.data.donationLink}</a>
+                  <p>{organization.data.email}</p>
+                </div>
+
+              <div className='orgrequests'>
+                <h3>Requests</h3>
+                {organization.data.itemCategories.map((itemRequests) => (
+                  <p key={itemRequests.index}>{itemRequests}</p>
+                ))}
+              </div>
+
               </div>
 
             ))}
