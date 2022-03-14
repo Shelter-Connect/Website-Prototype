@@ -30,7 +30,7 @@ export default function SingleOrg() {
       );
     });
   }, []);
-  // console.log(orgData);
+  console.log(orgData);
 
   return (
     <>
@@ -74,6 +74,30 @@ export default function SingleOrg() {
                   <p style={{ fontSize: 'large', marginTop: '10px' }}>
                     Phone: {organization.data.number ? `${organization.data.number}` : 'None Available'}
                   </p>
+                  <div className='schedule' style={{ marginTop: '10px' }}>
+                    {/* If schedule exists, starts process for each day */}
+                    {/* Parsing formula is organization.data.schedule.Frday[0].toDate().getHours() */}
+                    <p>Schedule: <br />  
+
+                    { organization.data.schedule.Monday[0] ? `Monday: ${organization.data.schedule.Monday[0].toDate().getHours()}00 - ${organization.data.schedule.Monday[1].toDate().getHours()}00` : 'Monday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Tuesday[0] ? `Tuesday: ${organization.data.schedule.Tuesday[0].toDate().getHours()}00 - ${organization.data.schedule.Tuesday[1].toDate().getHours()}00` : 'Tuesday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Wednesday[0] ? `Wednesday: ${organization.data.schedule.Wednesday[0].toDate().getHours()}00 - ${organization.data.schedule.Wednesday[1].toDate().getHours()}00` : 'Wednesday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Thursday[0] ? `Thursday: ${organization.data.schedule.Thursday[0].toDate().getHours()}00 - ${organization.data.schedule.Thursday[1].toDate().getHours()}00` : 'Thursday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Friday[0] ? `Friday: ${organization.data.schedule.Friday[0].toDate().getHours()}00 - ${organization.data.schedule.Friday[1].toDate().getHours()}00` : 'Friday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Saturday[0] ? `Saturday: ${organization.data.schedule.Saturday[0].toDate().getHours()}00 - ${organization.data.schedule.Saturday[1].toDate().getHours()}00` : 'Saturday: Closed/Unavailable' } <br />
+                    { organization.data.schedule.Sunday[0] ? `Sunday: ${organization.data.schedule.Sunday[0].toDate().getHours()}00 - ${organization.data.schedule.Sunday[1].toDate().getHours()}00` : 'Sunday: Closed/Unavailable' } <br />
+                   
+                     
+                     
+
+                    
+                    
+                    
+                    
+            
+                    
+                  </p>
+                    </div>
                 </div>
 
                 <div className='orgRequests'>
