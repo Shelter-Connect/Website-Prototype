@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // CSS
 import "../organizations.css";
+
+// React Icons
+import { BsGlobe } from "react-icons/bs";
+import { FaCarrot, FaBed, FaHeadSideMask } from "react-icons/fa";
+import { MdOutlineVolunteerActivism, MdHealthAndSafety } from "react-icons/md";
+import { GiClothes } from "react-icons/gi";
 
 // Firestore methods
 import firebase from "firebase";
@@ -10,7 +16,7 @@ import { db } from "../firebase";
 
 function OrgCards() {
   const [orgs, setOrgs] = React.useState([]);
-// This makes the call to the database for all organizations
+  // This makes the call to the database for all organizations
   useEffect(() => {
     const q = query(collection(db, "organizations"));
     onSnapshot(q, (querySnapshot) => {
@@ -25,25 +31,79 @@ function OrgCards() {
 
   console.log(orgs);
 
-
   return (
     <div className='orgCards'>
-      {/* Going over each item in the organization list to create a card element */}
-        {orgs.map((organization) => (
-
-          <div className='orgCardSingle border border-solid' key={organization.data.name}>
-              <h4 className='orgCardHeader'>{organization.data.name}</h4>
-              <p className='orgDescription'>{organization.data.description}</p>              
-              <p className='orgAddress'>Address: {organization.data.address ? `${organization.data.address}` : 'None available'}</p>
-{/* This link leads to a URL that we can use to have our single org page.  */}
-              <Link to={`/orgs/${organization.id}`} className='orgLink'>View Organization</Link>
-
+      {/* Going over each item in the organization list to create a card element, filtering out the test org */}
+      {orgs
+        .filter((orgs) => orgs.data.name !== "Linkare Test Organization")
+        .filter((orgs) => orgs.data.itemCategories)
+        .map((organization) => (
+          <div
+            className='orgCardSingle border border-solid'
+            key={organization.data.name}
+          >
+            <h4
+              className='orgCardHeader'
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {/* Render Icon, dependent on the first item in the item request category. If nutrition, carrot is rendered, if hygiene, health icon is rendered, etc */}
+              {organization.data.itemCategories[0] === "Nutrition" ? (
+                <FaCarrot
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Volunteering" ? (
+                <MdOutlineVolunteerActivism
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Clothes" ? (
+                <GiClothes
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Hygiene" ? (
+                <MdHealthAndSafety
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "Warmth" ? (
+                <FaBed
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : organization.data.itemCategories[0] === "COVID-19" ? (
+                <FaHeadSideMask
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              ) : (
+                <BsGlobe
+                  size={30}
+                  style={{ paddingRight: "5px", color: "blue" }}
+                />
+              )}
+              {organization.data.name}
+            </h4>
+            <p className='orgDescription'>{organization.data.description}</p>
+            <p className='orgAddress'>
+              Address:{" "}
+              {organization.data.address
+                ? `${organization.data.address}`
+                : "None available"}
+            </p>
+            {/* This link leads to a URL that we can use to have our single org page.  */}
+            <Link to={`/orgs/${organization.id}`} className='orgLink'>
+              View Organization
+            </Link>
           </div>
-
         ))}
-      
     </div>
   );
-}; 
+}
 
 export default OrgCards;
