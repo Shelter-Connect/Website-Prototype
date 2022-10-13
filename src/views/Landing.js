@@ -249,6 +249,29 @@ export default function Landing() {
           </div>
         </section>
         <section className="pt-20 pb-48">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap justify-center text-center mb-12">
+              <div className="w-full lg:w-6/12 px-4">
+                <h2 className="text-5xl font-bold">
+                  2021-22 Officers
+                </h2>
+              </div>
+            </div>
+            <div className="flex flex-wrap space-y-80">
+              <MemberProfile name="Nathan Palamuttam" role="CEO" />
+              <MemberProfile name="Rick Yanashita" role="Co-Founder" />
+              <MemberProfile name="Nathan Gong" role="Software Director" />
+              <MemberProfile name="Ethan Yu" role="Frontend Director" />
+              <MemberProfile name="Aidan Huynh" role="Marketing Director" />
+              <MemberProfile name="Jono Moore" role="Organization Outreach Director" />
+              <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing" />
+              <MemberProfile name="Christopher Lai" role="Outreach Lead" />
+              <MemberProfile name="Leo Ying" role="Marketing Lead" />
+              <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Lead" />
+            </div>
+          </div>
+        </section>
+        <section className="pt-20 pb-48">
           <h2 className="flex justify-center text-5xl font-bold mb-8">
             Instagram
           </h2>
