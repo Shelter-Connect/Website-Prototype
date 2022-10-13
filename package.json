@@ -5,7 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "dotenv": "^14.2.0",
-    "firebase": "^9.6.3",
+    "firebase": "^9.12.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-firebase-hooks": "^4.0.2",
