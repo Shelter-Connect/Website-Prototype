@@ -238,19 +238,13 @@ export default function Landing() {
               </div>
             </div>
             <div className="flex flex-wrap space-y-80">
-              <MemberProfile name="Nathan Palamuttam" role="CEO" />
-              <MemberProfile name="Rick Yanashita" role="Co-Founder" />
-              <MemberProfile name="Nathan Gong" role="Software Director" />
-              <MemberProfile name="Ethan Yu" role="Frontend Director" />
-              <MemberProfile name="Richard Lin" role="Backend Programmer" />
-              <MemberProfile name="Aidan Huynh" role="Marketing Director" />
-              <MemberProfile name="Jono Moore" role="Organization Outreach Director" />
-              <MemberProfile name="Ryan Chan" role="Social Media Manager" />
-              <MemberProfile name="Rishi Pasumarthi" role="Prototype Testing" />
-              <MemberProfile name="Christopher Lai" role="Outreach Lead" />
-              <MemberProfile name="Leo Ying" role="Marketing Lead" />
-              <MemberProfile name="Luke Desouza-Lawrence" role="Outreach Lead" />
-
+              <MemberProfile name="Ryan Chan" role="CEO/Marketing Director" />
+              <MemberProfile name="Arnav Dhingra" role="Marketing Member" />
+              <MemberProfile name="Armon Bhau" role="Marketing Member" />
+              <MemberProfile name="Matthew Korah" role="Marketing Member" />
+              <MemberProfile name="Amteg Gondara" role="Marketing Member" />
+              <MemberProfile name="Richard Lin" role="Software Director" />
+              <MemberProfile name="Sanchet Agarwal" role="Backend Programmer" />
             </div>
           </div>
         </section>
