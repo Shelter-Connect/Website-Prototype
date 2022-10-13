@@ -1,0 +1,26 @@
+.main-container {
+    box-sizing: border-box;
+    
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+  
+   .heading {
+      padding: 2rem;
+      font-size: 22px;
+      font-weight: 800;
+      text-align: center;
+  }
+
+  .requests-container {
+    display: flex;
+    justify-content:center;
+    
+    padding-bottom: 2rem;
+  }
+
+  .new-request-container {
+    font-family: sans-serif;
+    text-align: center;
+  }
