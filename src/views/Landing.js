@@ -248,12 +248,12 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="pt-20 pb-48">
+        <section className="pt-20 pb-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-12">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-5xl font-bold">
-                  2021-22 Officers
+                  2021-22 Retired Officers
                 </h2>
               </div>
             </div>
